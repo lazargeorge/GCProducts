@@ -1,0 +1,25 @@
+BloggerBlogBundle_homepage:
+    pattern:  /
+    defaults: { _controller: BloggerBlogBundle:Page:index }
+    requirements:
+        _method:  GET
+BloggerBlogBundle_about:
+    pattern:  /about
+    defaults: { _controller: BloggerBlogBundle:Page:about }
+    requirements:
+        _method:  GET
+BloggerBlogBundle_contact:
+    pattern:  /contact
+    defaults: { _controller: BloggerBlogBundle:Page:contact }
+    requirements:
+        _method:  GET|POST
+BloggerBlogBundle_search:
+    pattern:  /search
+    defaults: { _controller: BloggerBlogBundle:Search:search }
+    requirements:
+        _method:  GET
+BloggerBlogBundle_find:
+    pattern:  /find/{index}
+    defaults: { _controller: BloggerBlogBundle:Search:find }
+    requirements:
+        _method:  GET|POST
